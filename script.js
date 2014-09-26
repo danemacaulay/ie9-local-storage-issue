@@ -1,3 +1,7 @@
+if (window.location.protocol !== 'https:') {
+	alert('bug is only reproducible over SSL');
+}
+
 if (localStorage.greeting) {
 	console.log('localStorage is set');
 	alert('Hello ' + localStorage.greeting);
