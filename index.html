@@ -5,10 +5,11 @@
 	<script type="text/javascript" src="script.js"></script>
 </head>
 <body>
-	<p>When this page loads, a localStorage item is created.</p>
-	<p>When that localStorage item is available, the page will show an alert</p>
+	<p>When this page loads for the first time, a localStorage item is created.</p>
+	<p>When that localStorage item is available, reloading this page will show an alert</p>
 	<p>A cookie is set when localStorage is set, as to demonstrate the failure of localstorage</p>
 	<p>On first visit, no alert will show, on clicking the link below, the new tab should show the greeting</p>
+	<p>This works as expected in Chrome and Firefox but fails in IE9</p>
 	<a href="https://danemacaulay.github.io/ie9-local-storage-issue/" target="__blank">Open new tab</a>
 	<a href="#" onclick="localStorage.removeItem('greeting')">Remove Localstorage</a>
 	<a href="#" onclick="document.cookie = 'localStorageIsSet;expires=Thu, 01 Jan 1970 00:00:01 GMT;';">Remove Cookie</a>
